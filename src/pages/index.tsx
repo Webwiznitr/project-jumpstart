@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
-import { Heading, Landing } from '../components/theme'
+import { About, Heading, Landing } from '../components/theme'
 import Workshop from '../components/workshop'
 
 const IndexPage = () => (
@@ -14,7 +14,15 @@ const IndexPage = () => (
             <Heading className="gradient-text">Collaborate.</Heading>
             <Heading>Contribute.</Heading>
             <button className="register-btn">Register Here</button>
-            <Workshop/>
+            <About>
+                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a
+                document or a typeface without relying on meaningful content.In publishing and graphic design, Lorem ipsum is a placeholder
+                text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. In
+                publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document
+                or a typeface without relying on meaningful content.In publishing and graphic design, Lorem ipsum is a placeholder text
+                commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.
+            </About>
+            <Workshop />
         </Landing>
     </Layout>
 )
