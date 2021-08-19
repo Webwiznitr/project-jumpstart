@@ -625,3 +625,18 @@ pre tt:after {
     border: 2px solid white;
     color: white;
 }
+
+.grid{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.grid_item{
+    width: 60%;
+}
+
+@media screen and (max-width:768px) {
+    .grid{
+        width: 90%;
+    }
+}
