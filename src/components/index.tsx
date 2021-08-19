@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Schedule from './Schedule'
 import Hero from './Hero'
 import About from './About'
