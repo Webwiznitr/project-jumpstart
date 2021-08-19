@@ -1,5 +1,6 @@
 * {
     background-color: #000;
+    font-family: "Inter",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 }
 
 html {
@@ -601,7 +602,7 @@ pre tt:after {
 
 .gradient-text {
     background-color: #f3ec78;
-    background-image: linear-gradient(45deg, #00ff9eff, #93ff00ff);
+    background-image: linear-gradient(45deg, #00ff9e, #93ff00);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -611,9 +612,9 @@ pre tt:after {
 
 .register-btn {
     background-color: #fff;
-    border-radius: 2vw;
-    padding: 2%;
-    font-size: 3vw;
+    border-radius: 0.7vw;
+    padding: 1% 4%;
+    font-size: 1.5vw;
 }
 
 .register-btn:hover {
