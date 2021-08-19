@@ -6,11 +6,12 @@ export default function Footer() {
             style={{
                 marginTop: `2rem`,
                 color: '#ffffff',
+                textAlign:'center'
             }}
         >
-            © {new Date().getFullYear()}, Built with
+            Jumpstart © {new Date().getFullYear()}, Built with
             {` `}
-            Love
+            &hearts;
         </footer>
     )
 }
