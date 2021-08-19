@@ -4,25 +4,17 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 import Layout from '../components/layout'
 import Seo from '../components/seo'
+import { Heading, Landing } from '../components/theme'
 
 const IndexPage = () => (
     <Layout>
         <Seo title="Home" />
-        <h1>Let's start</h1>
-        <p>Welcome to your new Gatsby site.</p>
-        <p>Now go build something great.</p>
-        <StaticImage
-            src="../images/gatsby-astronaut.png"
-            width={300}
-            quality={95}
-            formats={['AUTO', 'WEBP', 'AVIF']}
-            alt="A Gatsby astronaut"
-            style={{ marginBottom: `1.45rem` }}
-        />
-        <p>
-            <Link to="/page-2/">Go to page 2</Link> <br />
-            <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-        </p>
+        <Landing>
+            <Heading>Code.</Heading>
+            <Heading className="gradient-text">Collaborate.</Heading>
+            <Heading>Contribute.</Heading>
+            <button className="register-btn">Register</button>
+        </Landing>
     </Layout>
 )
 
