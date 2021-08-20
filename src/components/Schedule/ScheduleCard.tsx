@@ -59,10 +59,8 @@ const RightBox = styled.div`
     // background-color: #222;
     text-align: left;
     padding: 2em 0;
-    font-size: inherit;
     align-items: flex-start;
     justify-content: center;
-
 
     @media only screen and (max-width: 767px) {
         justify-content: center;
@@ -71,9 +69,13 @@ const RightBox = styled.div`
         align-items: center;
         margin: 0 auto;
         padding: 0.8em 0;
+        
+        .title {
+            font-size: 95%;
+        }
 
-        .details {
-            margin: 0 auto;
+        .subtitle {
+            font-size: 90%;
         }
     }
 `
