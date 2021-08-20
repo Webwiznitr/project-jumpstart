@@ -6,6 +6,7 @@ import Header from './Header/header'
 import './layout.scss'
 import Footer from './Footer/Footer'
 import { Landing } from './theme'
+import { Navbar } from './Header'
 
 const Layout = ({ children }) => {
     const data = useStaticQuery(graphql`
@@ -21,6 +22,7 @@ const Layout = ({ children }) => {
     return (
         <>
             <div>
+                <Navbar />
                 <Landing>
                     <main>{children}</main>
                     <Footer />

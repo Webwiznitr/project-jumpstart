@@ -16,7 +16,7 @@ function card3(Day3) {
 
 function Schedule() {
     return (
-        <div className="container-schedule">
+        <div className="container-schedule" id="schedule">
             <SubHeading>Some cool subheading sochenge 🚀</SubHeading>
             <section className="content-section">
                 <div className="contents">

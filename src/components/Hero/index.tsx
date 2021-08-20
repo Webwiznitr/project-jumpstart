@@ -4,7 +4,7 @@ import Typeform from './typeform'
 
 export default function () {
     return (
-        <div>
+        <div id="home">
             <Heading>Code.</Heading>
             <Heading className="gradient-text">Collaborate.</Heading>
             <Heading>Contribute.</Heading>
