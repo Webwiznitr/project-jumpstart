@@ -80,30 +80,36 @@ const Link = styled.a`
     font-size: inherit;
     cursor: pointer;
     text-transform: capitalize;
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #93ff00;
+        transform: scaleY(0);
+        transition: transform 0.3s;
+        transform-origin: 50% 100%;
+    }
+
+    &:hover::after {
+        transform: scaleY(1);
+    }
 `
 
 export function NavLinks() {
-    // setLocation when user clicks on link, default location is window.location.hash
-    const [location, setLocation] = useState(window.location.hash)
     const links = ['home', 'about', 'schedule']
 
     // Conditionally render either the 'active' link or the regular link depending on location
     const renderLinks = () => {
         return links.map(link => {
             let hash = '#' + link
-            if (location === hash) {
-                return (
-                    <ActiveLink>
-                        <Link href={hash}>{link}</Link>
-                    </ActiveLink>
-                )
-            } else {
-                return (
-                    <LinkItem onClick={() => setLocation(hash)}>
-                        <Link href={hash}>{link}</Link>
-                    </LinkItem>
-                )
-            }
+            return (
+                <LinkItem>
+                    <Link href={hash}>{link}</Link>
+                </LinkItem>
+            )
         })
     }
 
