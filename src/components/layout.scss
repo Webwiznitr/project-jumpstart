@@ -118,13 +118,7 @@ h1 {
     margin-top: 0.6rem;
 }
 .date-time {
-    background-color: #222;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 1rem 1rem 5rem;
-    text-align: right;
-    white-space: nowrap;
-    color: #fff;
+    font-size: 2rem;
 }
 .date {
     margin: 0;
@@ -137,7 +131,7 @@ h1 {
 }
 
 .time {
-    font-size: 1.2rem;
+    font-size: inherit;
     font-weight: 700;
 }
 
@@ -157,6 +151,12 @@ h1 {
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
     font-weight: 699;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 0.5rem;
 }
 
 .name {
@@ -181,22 +181,31 @@ h1 {
 }
 
 @media (max-width: 767px) {
+    :root {
+        font-size: 90%;
+    }
     #home {
         .register-btn {
             font-size: 5vw;
         }
     }
 
-    .daily-schedule {
-        padding: 0;
-        margin: 0;
-    }
-    .content-section .contents .single-event .date-time {
-        padding: 0.9rem;
-    }
+    main {
+        .container-schedule {
+            font-size: 150%;
+        }
 
-    .description {
-        padding-left: 0.8rem;
+        .daily-schedule {
+            padding: 0;
+            margin: 0;
+        }
+        .content-section .contents .single-event .date-time {
+            padding: 0.9rem;
+        }
+
+        .description {
+            padding-left: 0.8rem;
+        }
     }
 }
 
@@ -208,17 +217,6 @@ h1 {
             .register-btn {
                 font-size: 6.5vw;
             }
-
-            
-        }
-        main {
-            .container-schedule {
-                font-size: 120%;
-                .title {
-                    font-size: interit;
-                }
-            }
-
         }
     }
 }

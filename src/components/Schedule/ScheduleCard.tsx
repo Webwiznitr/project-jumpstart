@@ -3,7 +3,8 @@ import styled from 'styled-components'
 import Line from './line'
 
 const ScheduleCardLayout = styled.article`
-    margin: auto;
+    margin: 0 auto;
+    font-size: inherit;
 `
 
 const SingleEvent = styled.div`
@@ -33,7 +34,6 @@ const SingleEvent = styled.div`
             z-index: -1;
         }
     }
-    
 `
 
 const LeftBox = styled.div`
@@ -63,6 +63,7 @@ const RightBox = styled.div`
     align-items: flex-start;
     justify-content: center;
 
+
     @media only screen and (max-width: 767px) {
         justify-content: center;
         width: 100%;
@@ -81,7 +82,7 @@ function ScheduleCard(props) {
     return (
         <ScheduleCardLayout>
             <SingleEvent className="single-event">
-                <LeftBox className="">
+                <LeftBox className="date-time">
                     <span className="time">{props.time}</span>
                 </LeftBox>
                 <Line oneSided={false} />
