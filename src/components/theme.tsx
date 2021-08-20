@@ -4,6 +4,10 @@ export const Heading = styled.h1`
     font-size: 10vw;
     color: #fff;
     font-weight: 800;
+
+    @media only screen and (max-width: 480px) {
+        font-size: 13vw;
+    }
 `
 
 export const Landing = styled.div`

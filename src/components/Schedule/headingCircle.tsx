@@ -7,6 +7,10 @@ const LeftBox = styled.div`
     color: #fff;
     text-align: right;
     padding: 2em 0;
+
+    @media only screen and (max-width: 767px) {
+        width: 45%;
+    }
 `
 
 const RightBox = styled.div`

@@ -1,9 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Day1, Day2, Day3 } from './ScheduleData'
 import ScheduleCard from './ScheduleCard'
 import { SubHeading } from '../theme'
-import Line from './line'
 import HeadingCircle from './headingCircle'
 
 function card1(Day1) {
