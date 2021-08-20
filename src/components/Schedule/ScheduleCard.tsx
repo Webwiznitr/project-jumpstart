@@ -4,7 +4,6 @@ import Line from './line'
 
 const ScheduleCardLayout = styled.article`
     margin: auto;
-    width: 80%;
 `
 
 const SingleEvent = styled.div`
@@ -17,8 +16,10 @@ const SingleEvent = styled.div`
 const LeftBox = styled.div`
     width: 30%;
     color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     // background-color: #222;
-    text-align: right;
     padding: 2em 0;
 `
 

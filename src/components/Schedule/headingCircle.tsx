@@ -19,7 +19,6 @@ const RightBox = styled.div`
 const HeadingLayout = styled.div`
     display: flex;
     flex-direction: row;
-    width: 80%;
     justify-content: center;
     margin: auto;
 `
