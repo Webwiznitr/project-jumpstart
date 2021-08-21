@@ -63,7 +63,7 @@ h1 {
     border-radius: 0.7vw;
     margin-top: 3%;
     padding: 1% 4%;
-    font-size: 1.5vw;
+    font-size: 3vw;
     border: none;
 }
 
@@ -118,13 +118,7 @@ h1 {
     margin-top: 0.6rem;
 }
 .date-time {
-    background-color: #222;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 1rem 1rem 5rem;
-    text-align: right;
-    white-space: nowrap;
-    color: #fff;
+    font-size: 2rem;
 }
 .date {
     margin: 0;
@@ -137,15 +131,10 @@ h1 {
 }
 
 .time {
-    font-size: 1.2rem;
+    font-size: inherit;
     font-weight: 700;
 }
-.Hackathon {
-    /* font-size: 100%; */
-    font: inherit;
-    /* vertical-align: baseline; */
-    border-left: 5px solid #93ff00;
-}
+
 .description {
     padding-left: 2rem;
     background-color: #333;
@@ -162,6 +151,12 @@ h1 {
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
     font-weight: 699;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 0.5rem;
 }
 
 .name {
@@ -186,17 +181,42 @@ h1 {
 }
 
 @media (max-width: 767px) {
-    .daily-schedule {
-        padding: 0;
-        margin: 0;
+    :root {
+        font-size: 90%;
     }
-    .content-section .contents .single-event .date-time {
-        padding: 0.9rem;
+    #home {
+        .register-btn {
+            font-size: 5vw;
+        }
     }
-    .Hackathon {
-        border-left: 2px solid #93ff00;
+
+    main {
+        .container-schedule {
+            font-size: 150%;
+        }
+
+        .daily-schedule {
+            padding: 0;
+            margin: 0;
+        }
+        .content-section .contents .single-event .date-time {
+            padding: 0.9rem;
+        }
+
+        .description {
+            padding-left: 0.8rem;
+        }
     }
-    .description {
-        padding-left: 0.8rem;
+}
+
+@media (max-width: 480px) {
+    :root {
+        font-size: 75%;
+
+        #home {
+            .register-btn {
+                font-size: 6.5vw;
+            }
+        }
     }
 }
