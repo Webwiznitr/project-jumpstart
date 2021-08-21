@@ -7,14 +7,11 @@ module.exports = {
     },
     plugins: [
         {
-            resolve: `gatsby-plugin-google-analytics`,
+            resolve: `gatsby-plugin-gtag`,
             options: {
-              trackingId: "G-F7ZGXWCK9T",
+              trackingId: `G-F7ZGXWCK9T`,
               head: true,
               anonymize: true,
-              respectDNT: true,
-              pageTransitionDelay: 0,
-              enableWebVitalsTracking: true,
             },
           },
         `gatsby-plugin-react-helmet`,
