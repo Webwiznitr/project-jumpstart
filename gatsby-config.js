@@ -6,6 +6,17 @@ module.exports = {
         siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
     },
     plugins: [
+        {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+              trackingId: "G-F7ZGXWCK9T",
+              head: true,
+              anonymize: true,
+              respectDNT: true,
+              pageTransitionDelay: 0,
+              enableWebVitalsTracking: true,
+            },
+          },
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-image`,
         `gatsby-plugin-sass`,
