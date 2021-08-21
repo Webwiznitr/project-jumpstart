@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Heading = styled.h1`
-    font-size: 10vw;
+    font-size:9vw;
     color: #fff;
     font-weight: 800;
 
@@ -11,7 +11,7 @@ export const Heading = styled.h1`
 `
 
 export const Landing = styled.div`
-    margin: 5rem auto;
+    margin: 3rem auto;
     text-align: center;
 `
 export const About = styled.p`

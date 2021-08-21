@@ -22,11 +22,11 @@ function Schedule() {
             <section className="content-section">
                 <div className="contents">
                     <div id="day1" className="daily-schedule">
-                        <HeadingCircle day={1} />
+                        <HeadingCircle day={1} date={Day1[0].date} />
                         {Day1.map(card1)}
-                        <HeadingCircle day={2} />
+                        <HeadingCircle day={2} date={Day2[0].date} />
                         {Day2.map(card2)}
-                        <HeadingCircle day={3} />
+                        <HeadingCircle day={3} date={Day3[0].date} />
                         {Day3.map(card3)}
                     </div>
                 </div>

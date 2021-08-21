@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import MessengerCustomerChat from 'react-messenger-customer-chat'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 import Content from '../components'
@@ -19,6 +20,11 @@ export default function Index() {
         <Layout>
             <Seo title="Home" />
             <Content />
+            <MessengerCustomerChat 
+                pageId="" 
+                appId="" 
+                themeColor="#b20000" 
+                />
         </Layout>
     )
 }
