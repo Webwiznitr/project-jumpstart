@@ -29,7 +29,8 @@ const SingleEvent = styled.div`
             height: 100px;
             position: absolute;
             right: 50%;
-            border-right: 2px #ccc dashed;
+            width: 2px;
+            background-image: linear-gradient(#222, #aaa);
             top: -100px;
             z-index: -1;
         }
