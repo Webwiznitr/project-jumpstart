@@ -18,7 +18,7 @@ export default function Index() {
         <Preloader />
     ) : (
         <Layout>
-            <Seo title="Home" />
+            <Seo title="Home Page" />
             <Content />
             <MessengerCustomerChat 
                 pageId="" 
